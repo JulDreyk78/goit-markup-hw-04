@@ -18,6 +18,9 @@ ol,
 li {
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
 .body {
     font-family: 'Roboto', sans-serif, Arial;
     color: #757575;
@@ -216,10 +219,9 @@ li {
     justify-content: center;
     align-items: center;
     background-color: #F5F4FA;
-    padding-bottom: 25px;
-    padding-top: 25px;    
     margin-bottom: 30px;
     border-radius: 4px;
+    height: 120px;
 }
 
 .content-list{
@@ -319,12 +321,13 @@ li {
 .team-soc-list{
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 .team-soc-item{
     width: 44px;
     height: 44px;
     margin-left: 10px;
-    margin-bottom: 30px;
+
 }
 .team-soc-item:first-child{
     margin-left: 0;
@@ -378,13 +381,6 @@ li {
 .clients-item {
     width: 170px;
     height: 92px;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid #2196F3  ;
 }
 
 .clients-item:not(:last-child) {
@@ -394,10 +390,17 @@ li {
 .clients-link {
     display: flex;
     justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
 }
 
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid #2196F3;
+}
 
 .clients-icon {
     fill: #AFB1B8;
@@ -508,30 +511,25 @@ color: #FFFFFF;
 margin-bottom: 20px;
 }
 
-.footer-soc-item:hover,
-.footer-soc-item:focus {
-    background-color: #2196F3;
-    border-radius: 50px;
-}
-
 .footer-soc-link {
     border-radius: 50px;
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
 }
 
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-    background-color: #2196F3;
-    fill: #FFFFFF;
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color:#2196F3 ;
 }
+
 /* -------------------Портфолио--------------------- 🤠 */
+
+
 .categories-list{
 margin-bottom: 50px;
 }
@@ -591,12 +589,15 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     font-size: 18px;
     line-height: 2;
     text-decoration: none;
-    margin-bottom: 4px;}
+    margin-bottom: 4px;
+}
+
 .scroll-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
     text-decoration: none;
+    color: #757575;
 }
 .text{
     padding: 20px 24px;
